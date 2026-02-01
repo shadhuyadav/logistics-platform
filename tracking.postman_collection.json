@@ -1,0 +1,80 @@
+{
+  "info": {
+    "_postman_id": "d619db99-e3d7-4184-9fa9-dfa830b9927f",
+    "name": "tracking",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "2109270"
+  },
+  "item": [
+    {
+      "name": "http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"trackingNumber\": \"DHL123456789\",\n  \"carrier\": \"DHL\",\n  \"status\": \"IN_TRANSIT\",\n  \"isPrimary\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "fulfillments",
+            "e12c429b-23a3-4a70-8858-648845461c95",
+            "tracking"
+          ],
+          "query": [
+            {
+              "key": "orgId",
+              "value": "972d7dda-54bc-4f06-9020-1b38045fa068"
+            }
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST \\\n\"http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068\" \\\n-H \"Content-Type: application/json\" \\\n-d '{\n  \"trackingNumber\": \"DHL123456789\",\n  \"carrier\": \"DHL\",\n  \"status\": \"IN_TRANSIT\",\n  \"isPrimary\": true\n}'\n"
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "fulfillments",
+            "e12c429b-23a3-4a70-8858-648845461c95",
+            "tracking"
+          ],
+          "query": [
+            {
+              "key": "orgId",
+              "value": "972d7dda-54bc-4f06-9020-1b38045fa068"
+            }
+          ]
+        },
+        "description": "Generated from cURL: curl -X GET \\\n\"http://localhost:8080/fulfillments/e12c429b-23a3-4a70-8858-648845461c95/tracking?orgId=972d7dda-54bc-4f06-9020-1b38045fa068\"\n"
+      },
+      "response": []
+    }
+  ]
+}
